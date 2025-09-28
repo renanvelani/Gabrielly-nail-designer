@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabrielly Nail Designer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>GABRIELLY</h1>
+    <h2>Nail Designer</h2>
+    <input type="text" placeholder="Buscar lançamentos" />
+    <button id="export">Exportar</button>
+  </header>
+
+  <main>
+    <section class="buttons">
+      <button class="entrada">➕ Entrada</button>
+      <button class="saida">➖ Saída</button>
+    </section>
+
+    <section class="relatorio">
+      <h3>RELATÓRIO MENSAL</h3>
+      <div class="card">R$2.500,00<br><span>Total de ganhos</span></div>
+      <div class="card">R$800,00<br><span>Total de gastos</span></div>
+      <div class="card">R$1.700,00<br><span>Saldo do mês</span></div>
+    </section>
+
+    <section class="graficos">
+      <h3>Evolução dos Ganhos</h3>
+      <canvas id="graficoGanhos"></canvas>
+
+      <h3>Entradas x Saídas</h3>
+      <canvas id="graficoComparativo"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
